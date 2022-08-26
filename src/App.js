@@ -6,11 +6,15 @@ import { useState } from 'react';
 
 function App() {
   const [getTag, setGetTag] = useState('');
+  const [getPath, setGetPath] = useState('');
+  const handlePath = (v) => {
+    setGetPath(v);
+  };
   return (<div style={{
     width: '100%', height: '300vh'
   }}>
     <Header setGetTag={setGetTag} />
-    <Navbar />
+    <Navbar getPath={getPath} handlePath={handlePath} />
     <ContentWrap getTag={getTag} />
   </div>
 
