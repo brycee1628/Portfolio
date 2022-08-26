@@ -1,0 +1,41 @@
+import BurgerMenu from "./BurgerMenu";
+import SearchIcon from "./SearchIcon";
+import GithubIcon from "./GithubIcon";
+import '../../css/Header.scss';
+import TagWrap from '../Tag/TagWrap';
+function Header({ setGetTag }) {
+
+    return (
+        <div className="Header-container">
+            <div className="Header">
+                <div className="Logo-wrap">
+                    <div className="BurgerMenu">
+                        <BurgerMenu />
+                    </div>
+                    <div className="Logo">
+                        <img src={`${window.location.href}images/0+B.png`} alt="Logo" />
+                    </div>
+                </div>
+                <div className="Header-middle">
+                    <input type="text" className="Header-search" placeholder="搜尋" />
+                    <div className="SearchIcon-wrap">
+                        <div className="SearchIcon">
+                            <SearchIcon />
+                        </div>
+                    </div>
+                </div>
+                <div className="Header-end">
+                    <div className="Header-end-icon">
+                        <a href="https://github.com/a0955361101" target="_blank" rel="noreferrer">
+                            <GithubIcon />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <TagWrap setGetTag={setGetTag} />
+        </div>
+
+    );
+}
+
+export default Header;

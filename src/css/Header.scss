@@ -1,0 +1,61 @@
+.Header-container {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    .Header {
+        padding: 0 16px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Logo-wrap {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            .BurgerMenu {
+                width: 24px;
+                height: 24px;
+            }
+            .Logo {
+                padding-left: 24px;
+                img {
+                    height: 56px;
+                }
+            }
+        }
+        .Header-middle {
+            display: flex;
+            align-items: center;
+            .Header-search {
+                width: 538px;
+                height: 36px;
+                border: 1px solid #ccc;
+                padding-left: 5px;
+                border-radius: 3px 0 0 3px;
+                outline: none;
+            }
+            .SearchIcon-wrap {
+                border-radius: 0 3px 3px 0;
+                border: 1px solid #ccc;
+                border-left: 0px;
+                width: 64px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #f8f8f8;
+                .SearchIcon {
+                    width: 24px;
+                    height: 24px;
+                    color: #030303;
+                }
+            }
+        }
+        .Header-end {
+            .Header-end-icon {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

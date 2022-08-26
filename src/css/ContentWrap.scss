@@ -1,0 +1,25 @@
+.ContentWrap {
+    margin-left: 244px;
+    width: calc(100% - 244px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: start;
+    .ContentWrap-flex {
+        display: flex;
+        min-width: 1504px;
+        margin: 0 auto;
+        .Card {
+            width: 360px;
+            height: 322px;
+            margin: 25px 8px 0;
+            img {
+                width: 100%;
+                height: 202px;
+            }
+            .Card-txt {
+                min-height: 120px;
+            }
+        }
+    }
+}
