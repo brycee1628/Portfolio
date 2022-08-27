@@ -1,3 +1,4 @@
+$bg-color-hover: rgba(0, 0, 0, 0.05);
 .Navbar-wrap {
     width: 244px;
     height: 100%;
@@ -9,7 +10,12 @@
         height: 40px;
         color: #333;
         font-weight: bolder;
+        cursor: pointer;
+        &:hover {
+            background-color: $bg-color-hover;
+        }
     }
+
     .Navbar-path-focus {
         background-color: rgba(0, 0, 0, 0.1);
     }

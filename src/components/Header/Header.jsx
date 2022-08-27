@@ -3,7 +3,7 @@ import SearchIcon from "./SearchIcon";
 import GithubIcon from "./GithubIcon";
 import '../../css/Header.scss';
 import TagWrap from '../Tag/TagWrap';
-function Header({ setGetTag }) {
+function Header({ setGetTag, getPath }) {
 
     return (
         <div className="Header-container">
@@ -32,7 +32,8 @@ function Header({ setGetTag }) {
                     </div>
                 </div>
             </div>
-            <TagWrap setGetTag={setGetTag} />
+            {getPath !== '技能' ? <TagWrap setGetTag={setGetTag} getPath={getPath} /> : ''}
+
         </div>
 
     );

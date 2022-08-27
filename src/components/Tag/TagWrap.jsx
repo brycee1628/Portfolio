@@ -3,12 +3,21 @@ import Tag from './Tag';
 import { v4 } from 'uuid';
 import { useState, useEffect } from 'react';
 
-function TagWrap({ setGetTag }) {
-    const tags = ['全部', 'React', 'JavaScript', 'CSS'];
+function TagWrap({ setGetTag, getPath }) {
+    const workTag = ['全部', 'React', 'JavaScript', 'CSS'];
+    let tags = [];
     const [thisTag, setThisTag] = useState(0);
     const handleTag = (number) => {
         setThisTag(number);
     };
+    switch (getPath) {
+        case '作品':
+            tags = workTag;
+            break;
+
+        default:
+            break;
+    }
 
     useEffect(() => {
         setGetTag(tags[thisTag]);
