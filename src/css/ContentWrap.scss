@@ -23,3 +23,39 @@
         }
     }
 }
+
+.SkillContent {
+    margin-left: 244px;
+    width: calc(100% - 244px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    .skill-icon-wrap {
+        height: 116px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1284px;
+        .skill-icon {
+            width: 210px;
+            height: 116px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-right: 4px;
+            margin-bottom: 4px;
+            svg {
+                margin: 20px 20px 4px 20px;
+                width: 32px;
+                height: 32px;
+            }
+            p {
+                margin: 0 20px 12px 20px;
+                height: 48px;
+                max-height: 48px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
