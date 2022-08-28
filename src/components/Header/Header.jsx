@@ -32,7 +32,7 @@ function Header({ setGetTag, getPath }) {
                     </div>
                 </div>
             </div>
-            {getPath !== '技能' ? <TagWrap setGetTag={setGetTag} getPath={getPath} /> : ''}
+            {getPath === '作品' ? <TagWrap setGetTag={setGetTag} getPath={getPath} /> : ''}
 
         </div>
 
