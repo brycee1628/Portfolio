@@ -20,3 +20,8 @@ $bg-color-hover: rgba(0, 0, 0, 0.05);
         background-color: rgba(0, 0, 0, 0.1);
     }
 }
+@media (max-width: 800px) {
+    .Navbar-wrap {
+        display: none;
+    }
+}

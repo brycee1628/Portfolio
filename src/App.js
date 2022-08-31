@@ -2,6 +2,7 @@ import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import ContentWrap from './components/Contents/ContentWrap';
 import SkillContent from './components/Contents/SkillContent';
+import HomeContent from './components/Contents/HomeContent';
 import { useState } from 'react';
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
                 ''
             )}
             {getPath === '技能' ? <SkillContent /> : ''}
-
+            {getPath === '首頁' ? <HomeContent /> : ''}
         </div>
     );
 }
