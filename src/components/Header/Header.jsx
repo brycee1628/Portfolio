@@ -3,13 +3,13 @@ import SearchIcon from "./SearchIcon";
 import GithubIcon from "./GithubIcon";
 import '../../css/Header.scss';
 import TagWrap from '../Tag/TagWrap';
-function Header({ setGetTag, getPath }) {
+function Header({ setGetTag, getPath, handleBurgerMenu }) {
 
     return (
         <div className="Header-container">
             <div className="Header">
                 <div className="Logo-wrap">
-                    <div className="BurgerMenu">
+                    <div className="BurgerMenu" onClick={() => handleBurgerMenu()}>
                         <BurgerMenu />
                     </div>
                     <div className="Logo">

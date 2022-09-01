@@ -20,8 +20,16 @@ $bg-color-hover: rgba(0, 0, 0, 0.05);
         background-color: rgba(0, 0, 0, 0.1);
     }
 }
+.Navbar-display-none {
+    display: none;
+}
+.Navbar-display-block {
+    display: block !important;
+    background-color: #fff;
+}
 @media (max-width: 800px) {
     .Navbar-wrap {
         display: none;
+        opacity: 0.9;
     }
 }

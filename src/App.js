@@ -8,11 +8,13 @@ import { useState } from 'react';
 function App() {
     const [getTag, setGetTag] = useState('全部');
     const [getPath, setGetPath] = useState('作品');
-
+    const [menuDisplay, setMenuDisplay] = useState(true);
     const handlePath = (v) => {
         setGetPath(v);
     };
-
+    const handleBurgerMenu = () => {
+        setMenuDisplay(!menuDisplay);
+    };
 
     return (
         <div
@@ -20,10 +22,10 @@ function App() {
                 width: '100%',
                 height: '300vh',
             }}>
-            <Header setGetTag={setGetTag} getPath={getPath} />
-            <Navbar getPath={getPath} handlePath={handlePath} />
+            <Header setGetTag={setGetTag} getPath={getPath} handleBurgerMenu={handleBurgerMenu} />
+            <Navbar getPath={getPath} handlePath={handlePath} menuDisplay={menuDisplay} />
             {getPath === '作品' ? (
-                <ContentWrap getTag={getTag} />
+                <ContentWrap getTag={getTag} menuDisplay={menuDisplay} />
             ) : (
                 ''
             )}
