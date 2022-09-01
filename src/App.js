@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import ContentWrap from './components/Contents/ContentWrap';
 import SkillContent from './components/Contents/SkillContent';
 import HomeContent from './components/Contents/HomeContent';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
     const [getTag, setGetTag] = useState('全部');
@@ -15,6 +15,24 @@ function App() {
     const handleBurgerMenu = () => {
         setMenuDisplay(!menuDisplay);
     };
+
+    const [breakPoint, setBreakPoint] = useState(
+        window.innerWidth <= 800 ? 1 : 0
+    );
+    console.log(breakPoint);
+    useEffect(() => {
+        function checkWidth() {
+            if (window.innerWidth <= 800) {
+                setBreakPoint(1);
+                setMenuDisplay(false);
+            } else {
+                setBreakPoint(0);
+                setMenuDisplay(true);
+            }
+        }
+        window.addEventListener("resize", checkWidth);
+        return () => window.removeEventListener("resize", checkWidth);
+    }, []);
 
     return (
         <div
