@@ -3,7 +3,7 @@ import SearchIcon from "./SearchIcon";
 import GithubIcon from "./GithubIcon";
 import '../../css/Header.scss';
 import TagWrap from '../Tag/TagWrap';
-function Header({ setGetTag, getPath, handleBurgerMenu }) {
+function Header({ setGetTag, getPath, handleBurgerMenu, handleSearch, searchStr, setSearchStr }) {
 
     return (
         <div className="Header-container">
@@ -17,8 +17,8 @@ function Header({ setGetTag, getPath, handleBurgerMenu }) {
                     </div>
                 </div>
                 <div className="Header-middle">
-                    <input type="text" className="Header-search" placeholder="搜尋" />
-                    <div className="SearchIcon-wrap">
+                    <input type="text" className="Header-search" placeholder="搜尋" value={searchStr} onChange={(e) => setSearchStr(e.target.value)} />
+                    <div className="SearchIcon-wrap" onClick={() => handleSearch()}>
                         <div className="SearchIcon">
                             <SearchIcon />
                         </div>
