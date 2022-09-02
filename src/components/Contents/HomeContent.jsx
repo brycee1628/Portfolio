@@ -4,7 +4,7 @@ function HomeContent() {
         <div className="HomeContent">
             <div className="HomeContent-wrap">
                 <div className="HomeContent-header">
-                    <div className="HomeContent-header-img" style={{ background: `url(${window.location.href}images/min.jpg) center center / cover no-repeat` }}></div>
+                    <div className="HomeContent-header-img" style={{ background: `url(${window.location.href}/images/min.jpg) center center / cover no-repeat` }}></div>
                     <div className="HomeContent-header-txt">
                         <div>戴偉民</div>
                         <p style={{ marginBottom: 40 }}>您好，我是偉民！喜歡嘗試新鮮事物 ，近期於資策會學習前端開發 ，並同組員協作完成一個專案。<br /><br />

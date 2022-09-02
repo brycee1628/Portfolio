@@ -20,7 +20,7 @@ function ContentWrap({ getTag, menuDisplay }) {
         }
     }, [getTag]);
     return (
-        <div className={`flex ContentWrap ${!menuDisplay ? 'ContentWrap-w-100' : ''}`}>
+        <div className={` ContentWrap ${!menuDisplay ? 'ContentWrap-w-100' : ''}`}>
             <div className='ContentWrap-flex'>
                 {getData.map((v, i) => {
                     return <Card data={v} key={v.sid} />;
