@@ -19,7 +19,7 @@ function App() {
     const [breakPoint, setBreakPoint] = useState(
         window.innerWidth <= 800 ? 1 : 0
     );
-    console.log(breakPoint);
+
     useEffect(() => {
         function checkWidth() {
             if (window.innerWidth <= 800) {

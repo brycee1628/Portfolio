@@ -13,7 +13,7 @@ function Header({ setGetTag, getPath, handleBurgerMenu }) {
                         <BurgerMenu />
                     </div>
                     <div className="Logo">
-                        <img src={`${window.location.href}images/0+B.png`} alt="Logo" />
+                        <img src={`${window.location.href}/images/0+B.png`} alt="Logo" />
                     </div>
                 </div>
                 <div className="Header-middle">

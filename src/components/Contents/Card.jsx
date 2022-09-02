@@ -1,5 +1,5 @@
 function Card({ data }) {
-    const imgSrc = window.location.href + 'images';
+    const imgSrc = window.location.href + '/images';
     return (
         <div className="Card">
             <a href={data.url} target="_blank" rel="noreferrer"><img src={`${imgSrc}/${data.img}`} alt="work" /></a>
