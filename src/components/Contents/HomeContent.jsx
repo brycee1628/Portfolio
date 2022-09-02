@@ -7,12 +7,12 @@ function HomeContent() {
                     <div className="HomeContent-header-img" style={{ background: `url(${window.location.href}/images/min.jpg) center center / cover no-repeat` }}></div>
                     <div className="HomeContent-header-txt">
                         <div>戴偉民</div>
-                        <p style={{ marginBottom: 40 }}>您好，我是偉民！喜歡嘗試新鮮事物 ，近期於資策會學習前端開發 ，並同組員協作完成一個專案。<br /><br />
+                        <p style={{ marginBottom: 40 }} >您好，我是偉民！喜歡嘗試新鮮事物 ，近期於資策會學習前端開發 ，並同組員協作完成一個專案。<br /><br />
                             每次克服新難題，總使人相當振奮，期許自己持續精進技術實力，協助公司解決問題，一同成長。</p>
-                        <p>歡迎與我聯繫哦，謝謝！</p>
-                        <p>e-mail: a0955361101@gmail.com</p>
-                        <p>phone: 0903608810</p>
-                        <p>Taipei , Taiwan</p>
+                        <p>歡迎與我聯繫哦，謝謝！</p> <br />
+                        <p className="pb-2">e-mail: a0955361101@gmail.com</p>
+                        <p className="pb-2">phone: 0903608810</p>
+                        <p className="pb-2">Taipei , Taiwan</p>
                     </div>
                 </div>
                 <div className="HomeContent-body">
