@@ -2,7 +2,7 @@ function Card({ data }) {
     const imgSrc = window.location.href + '/images';
     return (
         <div className="Card">
-            <a href={data.url} target="_blank" rel="noreferrer"><img src={`${imgSrc}/${data.img}`} alt="work" /></a>
+            <a href={data.url} target="_blank" rel="noreferrer"><img src={`${data.img}`} alt="work" /></a>
             <div className="Card-txt">
                 <h3>{data.name}</h3>
                 <p>{data.people}作品</p>
