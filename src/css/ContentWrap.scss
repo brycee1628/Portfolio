@@ -213,39 +213,12 @@
     }
     @media (max-width: 1400px) {
         .ContentWrap-flex {
-            min-width: 1400px;
             flex-wrap: wrap;
         }
     }
-    @media (max-width: 1320px) {
-        .ContentWrap-flex {
-            min-width: 1300px;
-        }
-    }
-    @media (max-width: 1220px) {
-        .ContentWrap-flex {
-            min-width: 1200px;
-        }
-    }
-    @media (max-width: 1220px) {
-        .ContentWrap-flex {
-            min-width: 1200px;
-        }
-    }
 
-    @media (max-width: 1170px) {
-        .ContentWrap-flex {
-            min-width: 1100px;
-        }
-    }
-    @media (max-width: 1100px) {
-        .ContentWrap-flex {
-            min-width: 800px;
-        }
-    }
     @media (max-width: 640px) {
         .ContentWrap-flex {
-            min-width: 375px;
             justify-content: center;
         }
     }
