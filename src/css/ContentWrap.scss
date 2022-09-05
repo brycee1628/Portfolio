@@ -7,7 +7,7 @@
     .ContentWrap-flex {
         display: flex;
         height: 100%;
-        margin: 0 auto;
+        padding-left: 80px;
         .Card {
             width: 360px;
             height: 360px;
@@ -166,6 +166,11 @@
     @media (max-width: 1400px) {
         .ContentWrap-flex {
             flex-wrap: wrap;
+        }
+    }
+    @media (max-width: 800px) {
+        .ContentWrap-flex {
+            padding: 0;
         }
     }
 
@@ -361,6 +366,7 @@
     .ContentWrap {
         width: 100%;
         margin: 0;
+        justify-content: center;
     }
     .SkillContent {
         width: 100%;
