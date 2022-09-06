@@ -6,6 +6,7 @@ import ReactIcon from '../Icons/ReactIcon';
 import Jquery from '../Icons/Jquery';
 import NodeJs from '../Icons/NodeJs';
 import GitHub from '../Icons/GitHub';
+import Tailwindcss from '../Icons/Tailwindcss';
 function SkillContent() {
     const skills = [
         {
@@ -38,6 +39,10 @@ function SkillContent() {
         {
             name: 'GitHub',
             svg: <GitHub />
+        },
+        {
+            name: 'tailwindcss',
+            svg: <Tailwindcss />
         },
     ];
     return (
