@@ -3,7 +3,7 @@ import React from "react";
 function Tailwindcss() {
     return (
         <svg
-            className="text-slate-900 dark:text-white w-auto h-5"
+            className="text-slate-900 dark:text-white w-auto h-6"
             viewBox="0 0 248 31"
         >
             <path
