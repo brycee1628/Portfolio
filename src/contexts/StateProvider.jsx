@@ -7,7 +7,7 @@ const Portfolio = [
     { sid: 4, name: '選擇困難救星', img: 'https://res.cloudinary.com/dcq1rdl1w/image/upload/c_scale,h_1040,w_1920/v1662472894/104_%E8%BD%89%E7%9B%A4_dx7tn5.png', people: '個人', skill: 'HTML / CSS / JavaScript', url: 'https://a0955361101.github.io/turntable/' },
     { sid: 5, name: '我的個人簡歷', img: 'https://res.cloudinary.com/dcq1rdl1w/image/upload/c_scale,h_1040,w_1920/v1662462555/104_-_%E4%BD%9C%E5%93%81%E9%A0%81_woa0i2.png', people: '個人', skill: 'HTML / CSS / SCSS / JavaScript / tailwind / React / RWD /  GitHubPages', url: 'https://a0955361101.github.io/Portfolio/' },
     { sid: 6, name: 'tailwind練習 - 登入頁', img: 'https://res.cloudinary.com/dcq1rdl1w/image/upload/c_scale,h_1040,w_1920/v1662461737/104_-_%E7%99%BB%E5%85%A5%E9%A0%81%E9%9D%A2_p3z7re.png', people: '個人', skill: 'HTML / CSS / JavaScript / tailwind / React / GitHubPages', url: 'https://a0955361101.github.io/tailwind/' },
-
+    { sid: 7, name: 'TypeScript - todolist', img: 'https://res.cloudinary.com/dcq1rdl1w/image/upload/c_scale,h_1040,w_1920/v1662886288/104_todolist_puqaft.png', people: '個人', skill: 'HTML / CSS / TypeScript / tailwind / React / GitHubPages', url: 'https://a0955361101.github.io/typescript-todolist/' },
 ];
 
 export const PortfolioContext = React.createContext(Portfolio);
