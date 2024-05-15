@@ -1,4 +1,4 @@
-[我的作品集網站-點擊觀看](https://a0955361101.github.io/Portfolio/)
+[我的作品集網站-點擊觀看](https://brycee1628.github.io/Portfolio/)
 
 ### 使用技術
 
